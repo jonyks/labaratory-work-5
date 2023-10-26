@@ -1,6 +1,6 @@
 try:
-    a=input()
-    b=int(input())%26
+    a=input('Строка для шифрования ')
+    b=int(input('Введите шаг '))%26
 except:
     print('Пожалуйста введите верные данные')
     quit()
@@ -19,4 +19,4 @@ for i in a:
             st=st+chr(d)
         else:st=st+chr(ord(i)+b)
     else:st=st+i
-print(st)
+print(f'Зашифрованное слово {st}')
